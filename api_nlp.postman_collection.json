@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "7f7d1680-5d57-41c5-8323-b77f9a126989",
+		"name": "API NLP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Processing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data",
+							"value": "Jokowi kecewa kepada kapolri karena penanganan di kampung bandit tidak berjalan dengan baik",
+							"description": "Input for NLP",
+							"type": "default"
+						},
+						{
+							"key": "callback",
+							"value": "test",
+							"description": "URL Callback with POST Method",
+							"type": "default"
+						},
+						{
+							"key": "id",
+							"value": "test",
+							"description": "ID Data for keep construct",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1111/entity-extract",
+					"host": [
+						"localhost"
+					],
+					"port": "1111",
+					"path": [
+						"entity-extract"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
