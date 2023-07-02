@@ -11,7 +11,7 @@ def entityExtract(text):
     time.sleep(1)
 
     entity = ner(data['data'])
-    print(postCallback(url='https://entity.free.beeceptor.com/store-entity', id=data['id'], data=entity))
+    print(postCallback(url=data['callback'], id=data['id'], data=entity))
 
     time.sleep(1)
     print("Task completed: Entity Extractor")
@@ -22,7 +22,7 @@ def sentimentAnalytics(text):
     time.sleep(1)
 
     sentiment = analytics(data['data'])
-    print(postCallback(url='https://entity.free.beeceptor.com/store-sentiment', id=data['id'], data=sentiment))
+    print(postCallback(url=data['callback'], id=data['id'], data=sentiment))
 
     time.sleep(1)
     print("Task completed: Sentiment Extractor")
@@ -33,7 +33,7 @@ def summaryAnalytics(text):
     time.sleep(1)
 
     resume = summary(data['data'])
-    print(postCallback(url='https://entity.free.beeceptor.com/store-summary', id=data['id'], data=resume))
+    print(postCallback(url=data['callback'], id=data['id'], data=resume))
 
     time.sleep(1)
     print("Task completed: Summary Extractor")
@@ -44,7 +44,7 @@ def wordClouds(text):
     time.sleep(1)
 
     words = wordCloud(data['data'])
-    print(postCallback(url='https://entity.free.beeceptor.com/store-words', id=data['id'], data=words))
+    print(postCallback(url=data['callback'], id=data['id'], data=words))
 
     time.sleep(1)
     print("Task completed: Words Extractor")
