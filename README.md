@@ -62,7 +62,7 @@ ___
     doi         = { 10.57967/hf/0644 },
     publisher   = { Hugging Face }
 }
-@inproceedings{wilie2020indonlu,
+@misc { sastrawi,
     title       = { PySastrawi },
     author      = { Sastrawi },
     url         = { https://github.com/sastrawi/sastrawi },
