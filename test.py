@@ -3,6 +3,8 @@ import pandas
 import utility
 from ner import ner
 from summary import summary
+from senti import analytics
+from words import wordCloud
 
 df = pandas.read_csv('dataset_tweet_sentiment_opini_film.csv', delimiter=',')
 tweets = df['Text Tweet']
@@ -22,4 +24,8 @@ for tweet in range(10):
     print(ner(text))
     print("Extract Summary : ")
     print(summary(text))
+    print("Sentiment Analytics : ")
+    print(analytics(text))
+    print("Words Extraction : ")
+    print(wordCloud(text))
     print("=====================================")
